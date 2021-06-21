@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine&family=IBM+Plex+Serif&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto&family=Roboto+Slab&display=swap');
+
+:root{
+	--primary-color:#fff;
+	--second-color:#a52a2a;
+	--third-color:#9e9e9e;
+	--roboto: 'Roboto', sans-serif;
+	--Acme: 'Acme', sans-serif;
+	--Domine: 'Domine', serif;
+	--IBM: 'IBM Plex Serif', serif;
+	--Varela: 'Varela Round', sans-serif;
+    --text-size:14px;
+
+
+}
+body{
+	font-family: var(--roboto);
+}
+/* Navbar Start */
+.navbar-light .navbar-nav .nav-link{
+	color: var(--primary-color);
+	font-size: 14px;
+	letter-spacing: 0.25px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	background-color: var(--primary-color);
+    color: var(--second-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav .fab{
+	font-size: 16px;
+    padding: 9px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    text-align: center;
+}
+nav .fab:hover{
+	color: var(--primary-color);
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+nav .social a{text-decoration: none;}
+
+header{
+	height: 100vh;
+	min-height: 300px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,-0.2)), url('../images/123.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+header h1{
+	font-family: var(--roboto);
+	font-size: 75px;
+	font-weight: 700px;
+	color: var(--primary-color);
+    margin-left: 15%;
+    margin-top: 20%;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+/********Header*****/
+.main .book{
+	margin-top:40px;
+	margin-bottom: 0px;
+}
+.main .book h2{
+	font-size: 40px;
+	line-height: 1.5;
+	color: var(--second-color);
+	font-family: var(--roboto);
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+form{
+	margin-bottom: 20px;
+	font-family: var(--roboto);
+}
+form div{
+	position: relative;
+	 margin-bottom: 30px;
+    margin-top: 30px;
+}
+form div .form-control{
+	padding-left: 50px;
+    padding-bottom: 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--third-color);
+}
+
+form div .fas{
+	position: absolute;
+	font-size: 20px;
+    top: 9px;
+    left: 16px;
+    color: var(--third-color);
+}
+form div .btn{
+	padding:2px 50px;
+    border: 3px dotted var(--second-color);
+    font-size: 23px;
+}
+form div .btn:hover{
+	border:none;
+	color: var(--second-color);
+	color: var(--primary-color);
+}
+.main .row .discover{
+	margin-bottom: 30px;
+}
+.main .row .discover .second-part{
+	text-align: center;
+	position: absolute;
+    top: 36%;
+    margin-right: 4%;
+}
+
+.main .row .discover .second-part h2{
+	font-weight: bold;
+ 	margin-bottom: 20px;
+	color: var(--second-color);
+}
+.main .row .discover .second-part p{
+	font-size: 20px;
+	width: 70%;
+    margin: 9px auto;
+	font-weight: 400px;
+}
+.main .sec-part{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.main .row .discover .second-part .btn{
+	padding: 8px 12px;
+    border-bottom: 4px solid var(--second-color);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+.main .row .discover .second-part .btn:hover{
+	cursor: pointer;
+	border: none;
+	color: var(--primary-color);
+	background-color: var(--second-color);
+}
+footer{
+	margin-top: -43px;
+}
+
+::placeholder{
+	color: #000;
+	font-size: 23px;
+}
+
+/*media screen*/
+ @media only screen and (min-width: 33.9em) { 
+ 	.main .row .discover{
+ 		margin-top: 0px;
+ 		margin-bottom: 0px;
+ 	}
+	header{
+	height: 50vh;
+}
+header h1 {
+    margin-left: 0;
+    text-align: center;
+
+}
+.main .third-part .discover .second-part{margin-left: 17%;}
+
+}
+@media only screen and (min-width: 47.9em) {
+	header{height: 50vh;}
+	header h1 {
+		header h1 {
+    text-align: center;
+    }
+   .main .row .discover{
+ 		margin-top: 0px;
+ 		margin-bottom: 0px;
+ 	}
+ 	.main .third-part .discover .second-part{margin-left: 4%;}
+}
+@media only screen and (min-width: 61.9em) {
+
+		header{
+	height: 100vh;
+}
+.main .third-part .discover .second-part{margin-left: 4%;}
+}
+@media only screen and (min-width: 74.9em) { 
+		header{
+	height: 100vh;
+}
+.main .third-part .discover .second-part{margin-left: 4%;}
+}
